@@ -12,4 +12,6 @@ WORKDIR /unicorn
 
 RUN bundle install
 
-CMD bundle exec rackup --port 8080 --host 0.0.0.0
+CMD curl http://unicorn.herokuapp.com/update/scuzzbuckets/complete
+
+bundle exec rackup --port 8080 --host 0.0.0.0
